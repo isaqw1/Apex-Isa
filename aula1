@@ -1,0 +1,21 @@
+Exercícios
+
+a) Com base neste capítulo, descreva o que é HTML e o que é JavaScript.
+
+HTML é uma linguagem de marcação, geralmente é acompanhado pelo Javascript 
+porque ele sozinho fica um site simples, pois não suporta imagens, videos, etc.
+o Javascript é uma linguagem de progração que precisa do Node.js para funcionar, 
+ela cria ações e funções.
+
+b) É correto afirmar que JavaScript é uma linguagem de programação?
+Justifique sua resposta.
+
+Se acompanhado do Node.js sim, é uma linguagem bem intuitiva e personalizável.
+
+
+c) Os conceitos de lógica serão desenvolvidos utilizando a linguagem HTML,
+pois ela tem suporte a funcionalidades como condicionais e laços de
+repetição. Essa afirmação está correta? Justifique sua resposta.
+
+Não. Pois o HTML em si é muito limitado, para se tornar algo mais elaborado,
+ele vai precisar de uma linguagem de programação para acompanha-lo. 
