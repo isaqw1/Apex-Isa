@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><!-- Exercícios
+    a) Peça duas notas, em seguida realize a média e informe se o aluno está
+    aprovado ou reprovado. Para essa atividade, o aluno precisa ter média 7 ou
+    mais para ser considerado aprovado. -->
+    
+     <!-- variável contendo média --> 
+    
+    <script>
+    
+    var media = 8.5
+     
+        /* variável contendo faltas */
+    
+    var faltas = 10
+    
+        /* condicional  */
+    
+        if(media >= 7 && faltas <= 10) {
+            document.write("Aprovado")
+        }else{document.write("Reprovado")
+        }
+    </script>
+    
+    <!-- b) O usuário informa dois valores numéricos, se forem iguais deverão ser
+    somados, caso contrário multiplicados.  -->
+    <script> 
+       
+        var valor1 = 16
+        var valor2 = 10
+    
+  if (valor1==valor2) {
+    document.write(valor1+valor2)
+  } else {
+    document.write(valor1*valor2)
+    
+  }
+        
+        
+        
+        </script>
+    
+  <!--   c) Haverá uma lista com quatro produtos que uma lanchonete vende, o usuário
+    precisa informar o código do produto, em seguida o valor pago por ele. Nosso
+    sistema precisa retornar o troco que deve ser dado ao cliente, valide caso o
+    cliente informe um pagamento inferior ao valor do pedido.  -->
+   <script> 
+
+   var produto1 = 10
+   var produto2 = 15
+   var produto3 = 13
+   var produto4 = 25
+
+   var valorpago= 25
+   var codigodoproduto = 1
+   if (codigodoproduto == 1 &&valorpago>=produto1) {
+    document.write(valorpago-produto1)
+
+    
+   }else if (codigodoproduto == 2 &&valorpago>=produto2) {
+    document.write(valorpago-produto2) 
+    
+   }else if (codigodoproduto == 3 &&valorpago>=produto3) {
+    document.write(valorpago-produto3) 
+    
+   } else if (codigodoproduto == 4 && valorpago>=produto4) {
+    document.write(valorpago-produto4) 
+    
+   
+   }
+   else {
+    document.write("Erro de pagamento")
+    
+   }
+    
+   
+/* /* <!-- d) Peça para o usuário informar três números, em seguida exiba o menor deles.
+ */
+ var num1 = 2
+ var num2 = 4
+ var num3 = 6
+
+ if (num1<num2&&num1<num3) {
+    document.write(num1)
+ } else if (num2<num3&&num2<num1) {
+    document.write(num2)
+    
+ } else if (num3<num2&&num1<num2) {
+    document.write(num2)
+ } else {
+    
+ }
+ 
+
+  /*   /* e) O usuário deverá informar a largura de cada lado de um triângulo, peça as
+três larguras (direito, inferior e esquerdo) e verifique o tipo de triângulo. Os
+tipos e triângulos são: 
+
+Isósceles Dois lados iguais e um diferente
+Escaleno Três lados diferentes
+Equilátero Três lados iguais
+ */
+
+var direito = 3
+var esquerdo = 4
+var inferior = 5
+
+ if (direito==esquerdo&&inferior!=direito||esquerdo==inferior&&direito!=esquerdo||direito==inferior&&direito!=esquerdo) {
+    document.write("Isóceles")
+
+
+ } else if 
+
+ 
+ 
+ (direito!=esquerdo&&inferior!=esquerdo && direito!=inferior){
+document.write("Escaleno")
+
+ } else if
+ 
+ 
+  (direito==esquerdo&& esquerdo==inferior) {
+    document.write("Equilátero")
+  }
+
+
+  {/* a) O usuário informa uma temperatura, em seguida poderá selecionar o tipo de
+conversão (Celsius e Fahrenheit). */
+var temperatura = 30
+var tipoConversao = "Celsius"
+
+switch (tipoConversao) {
+    case "Celsius":
+        document.write(temperatura *1.8+32)
+        break;
+
+case "Fahrenheit":
+     document.write(temperatura -32)*5/9
+    default:
+
+        break;
+}
+  }
+
+   /* Crie um conversor de moedas. Será informado o valor e as conversões:
+○ Real para Dólar
+○ Dólar para Real
+○ Real para Euro
+○ Euro para Real */
+
+var  valor = 20
+var real = 1
+var dolar = 5
+var euro = 6
+var tipoConversao = "real"
+
+switch (tipoConversao)
+ {
+    case "real":
+        document.write(valor/dolar)
+        break;
+
+        case "dolar":
+        document.write(valor*dolar)
+break;
+        case  "euro":
+        document.write(valor/euro)
+break;
+        case "euroreal": 
+        document.write(valor*euro)
+    default:
+        break;
+} 
+
+/* c) O usuário informa o nome de um produto, valor e segmento (vestuário,
+eletrônico ou alimentício). Se o segmento for vestuário será dado 5% de
+desconto sobre o valor do produto, caso eletrônico 8% e alimentício 10%. */
+
+var tipodosegmento = "vestuario"
+var camiseta = 5
+var calça = 5
+
+
+var computador = 8
+var teclado = 8
+
+
+var tomate = 10
+var morango = 10
+
+switch (tipodosegmento) {
+    case "vestuario":
+        var desconto = camiseta*0.05
+        document.write(camiseta-desconto)
+
+        break;
+
+        case "eletronico":
+        document.write(desconto = computador*0.08)
+break;
+    default:
+        break;
+ case "alimenticio":
+document.write(desconto = morango*0.10)
+break;
+}
+/* d) Crie um sistema de votação para três candidatos. O eleitor poderá selecionar
+um dos três nomes, em seguida será contabilizado o voto para o candidato. */
+
+var candidato1 = "Bolsonaro"
+var candidato2 = "Lula"
+var candidato3 = "Marina"
+var votosbolsonaro = 0
+var votoslula=0
+var votosmarina=0
+
+switch (candidato1) {
+    case "Bolsonaro":
+        document.write(votosbolsonaro)
+        break;
+
+        case "Lula": 
+        document.write(votoslula)
+    default:
+        break;
+}
+case "Marina":
+document.write(votosmarina)
+
+/* e) O usuário informa o horário atual no Brasil (apenas hora), em seguida
+informa um país. Retorne o horário daquele país se baseando pela hora
+informada. Cadastre ao menos três países diferentes. */
+
+var pais = "Alemanha"
+
+
+var  horariobrasil=17
+var horarioholanda=5
+var horarioirlanda=10
+
+switch (pais) {
+    case "Alemanha":
+        document.write(horariobrasil-3)
+
+        break;
+        
+        case "Holanda": 
+document.write(horarioholanda+5)
+    default:
+
+    case "Irlanda": 
+
+    document.write(horarioirlanda-12)
+        break;
+}
+</script>
+</body>
+</html>
